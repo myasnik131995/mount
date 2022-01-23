@@ -11,17 +11,16 @@ body {
 }
 .header_menu_points{
     display: flex;
-    justify-content: space-evenly;
     list-style-type: none;
-    width: 350px;
-    margin: 0;
-    padding: 0 7vw 0 0;
+    max-width: 350px;
+    margin: 0 265px 0 0;
 }
 .header_menu_points a{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #383741;
     text-decoration: none;
+    margin: 0 0 0 30px;
 }
 .hader_profile{
     display: flex;
@@ -38,24 +37,46 @@ body {
     text-decoration: none;
 }
 
-.content{
+.circle{
+    width: 25px;
+    height: 25px;
+    background-color: #2F80ED;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 25px;
+    margin: 0 0 0 10px;
+}
+.circle.none {
+    display: none;
+}
+
+
+.greeting.none{
+    display: none;
+}
+.greeting{
     display: flex;
     justify-content: space-evenly;
 }
-.content_navigation{
+.greeting_navigation{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 11vh 0 0 0;
+    padding: 60px 0 0 0;
 }
-.content_navigation a{
+.greeting_navigation a{
     text-decoration: none;
 }
-.content_navigation_profiles_item{
+.greeting_navigation_profiles_item{
     display: flex;
     align-items: center;
 }
-.content_navigation_profiles_item_name {
+.greeting_navigation_profiles_item_name.select{
+    color: red;
+}
+.greeting_navigation_profiles_item_name {
     margin: 0 0 0 20px;
     font-family: 'Montserrat', sans-serif;
     color: #324552;
@@ -63,83 +84,151 @@ body {
     font-size: 14px;
     max-width: 115px;
 }
-.content_main{
-    height: 80vh;
-    overflow: scroll;
+.greeting_content{
+    padding: 40px 0 0 0;
 }
-.content_main::-webkit-scrollbar {
-    width: 0;
-}
-.content_main h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(5, 1, 24, 0.712);
-    font-weight: bolder;
-    font-size: 34px;
-}
-.content_main_text{
+.greeting_content_text{
     color: #000;
     font-size: 19px;
     line-height: 32px;
 }
-.paragraph{
+.greeting_content_text_hello{
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 25px 0;
-    max-width: 620px;
+    max-width: 744px;
+    font-size: 19px;
+    line-height: 30px;
 }
-.content_main_button{
+.greeting_content_button{
     background-color: #2F80ED;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    max-width: 200px;
+    max-width: 98px;
     padding: 10px 20px;
     text-align: center;
     border-radius: 3%;
-    margin: 2vh 0 0 0;
 }
-.content_main a{
+.greeting_content a{
     text-decoration: none;
 }
 
-.content_main.second{
-    padding: 10vh 0 0 0;
-    overflow: visible;
-}
 
-.content_main_currentProfile{
+
+.section_one.none{
+    display: none;
+}
+.section_one{
     display: flex;
-    margin: 0 0 1vh 0;
+    justify-content: space-evenly;
 }
-.content_main_currentProfile_avatar img{
-    border-radius: 50%;
+.section_one_content{
+    max-width: 745px;
+    height: 80vh;
+    overflow: scroll;
+    padding: 15px 0 0 0;
+    margin: 0 0 0 -10px;
 }
-.content_main_currentProfile_name{
-    align-self: center;
-    margin: 0 0 0 10px;
+.section_one_content::-webkit-scrollbar {
+    width: 0;
+}
+.section_one_content h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 34px;
     font-weight: bolder;
 }
-.content_main_message{
+.section_one_content_text_paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+.section_one_content_text a{
+    text-decoration: none;
+    color: #000;
+}
+.section_one_content_text_button{
+    background-color: #2F80ED;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 3%;
+    max-width: 255px;
+}
+
+
+.messenger.none{
+    display: none;
+}
+.messenger{
+    display: flex;
+    justify-content: space-evenly;
+}
+.messenger_content{
+    max-width: 745px;
+    height: 80vh;
+    overflow: scroll;
+    margin: 50px 0 0 0;
+}
+.messenger_content::-webkit-scrollbar {
+    width: 0;
+}
+.messenger_content_statement{
     background-color: #DEF1FF;
-    max-width: 750px;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 19px;
-    border-radius: 2%;
-    max-width: 620px;
-} 
-.content_main_button.next{
-    max-width: 92px;
     border-radius: 3%;
+    max-width: 750px;
+    margin: 10px 0 0 0;
+} 
+.messenger_content_buttons.none{
+    display: none;
+}
+.messenger_content_buttons{
+    background-color: #2F80ED;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    max-width: 92px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 3%;
+    margin: 10px 0 0 0;
+}
+.messenger_content a{
+    text-decoration: none;
+}
+.messenger_content_answer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+}
+.messenger_content_answer_employee{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.messenger_content_answer_statement{
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    border-radius: 3%;
+    max-width: 750px;
+    margin: 10px 0 0 0;
+}
+.messenger_content_answer.none{
+    display: none;
+}
+.messenger_content_statement a{
+    text-decoration: underline;
+    color: #000;
 }
 .content_input{
     display: flex;
     align-items: center;
-    margin: 15px 0 0 0;
-}
-.content_input a{
-    margin: 0 0 0 1vw;
+    margin: 0 0 40px 0;
 }
 .send_message{
     width: 100%;
@@ -149,4 +238,7 @@ body {
     font-size: 14px;
     color: #828282;
     padding: 25px 3vw;
+}
+.content_input a{
+    margin: 0 0 0 10px;
 }
