@@ -4,10 +4,14 @@ body {
     background-color: #F8FAFB;
 }
 .header {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 33px 0;
+}
+.header_logo{
+    display: grid;
+    justify-content: center;
 }
 .header_menu_points{
     display: flex;
@@ -57,21 +61,24 @@ body {
     display: none;
 }
 .greeting{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 .greeting_navigation{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 60px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
 }
 .greeting_navigation a{
     text-decoration: none;
 }
 .greeting_navigation_profiles_item{
     display: flex;
+    justify-content: start;
     align-items: center;
+    margin: 10px 0 0 0;
 }
 .greeting_navigation_profiles_item_name.select{
     color: red;
@@ -85,7 +92,7 @@ body {
     max-width: 115px;
 }
 .greeting_content{
-    padding: 40px 0 0 0;
+    margin: 50px 0 0 0;
 }
 .greeting_content_text{
     color: #000;
@@ -119,8 +126,8 @@ body {
     display: none;
 }
 .section_one{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 .section_one_content{
     max-width: 745px;
@@ -161,8 +168,8 @@ body {
     display: none;
 }
 .messenger{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 .messenger_content{
     max-width: 745px;
@@ -181,6 +188,9 @@ body {
     border-radius: 3%;
     max-width: 750px;
     margin: 10px 0 0 0;
+} 
+.messenger_content_statement.yellow{
+    background-color: #E3FBC5;
 } 
 .messenger_content_buttons.none{
     display: none;
@@ -237,8 +247,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #828282;
-    padding: 25px 3vw;
+    padding: 25px 30px;
 }
 .content_input a{
     margin: 0 0 0 10px;
+}
+.change_answer{
+    display: flex;
+    justify-content: space-between;
+}
+.change_answer_versions{
+    display: flex;
+    flex-direction: column;
+}
+.change_answer_versions a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: lighter;
+    margin: 15px 0 0 0;
+    color: #000;
 }
