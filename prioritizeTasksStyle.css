@@ -67,30 +67,24 @@ body {
 .greeting_navigation{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
     padding: 60px 0;
 }
-.greeting_navigation a{
-    text-decoration: none;
-}
-.greeting_navigation_profiles_item{
+.greeting_bot_div{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     display: flex;
     justify-content: start;
     align-items: center;
+    max-width: 220px;
     margin: 10px 0 0 0;
 }
-.greeting_navigation_profiles_item_name.select{
-    color: red;
+.greeting_bot_avatar{
+    margin: 0 10px 0 0;
 }
-.greeting_navigation_profiles_item_name {
-    margin: 0 0 0 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #324552;
-    font-weight: bolder;
-    font-size: 14px;
-    max-width: 115px;
-}
+
+
+
 .greeting_content{
     margin: 50px 0 0 0;
 }
